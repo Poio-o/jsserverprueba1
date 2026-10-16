@@ -1,0 +1,42 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Carlos Mendoza",
+      "email": "carlos@email.com",
+      "telefono": "+34 600 123 456",
+      "pais": "España",
+      "ciudad": "Madrid",
+      "fecha_registro": "2024-03-15",
+      "estado_cuenta": "activo"
+    },
+    {
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "email": "ana@email.com",
+      "telefono": "+52 55 9876 5432",
+      "pais": "México",
+      "ciudad": "CDMX",
+      "fecha_registro": "2025-01-10",
+      "estado_cuenta": "activo"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 101,
+      "clienteId": 1,
+      "fecha_compra": "2026-10-15T14:32:00Z",
+      "total_pagado": 150.5,
+      "metodo_pago": "tarjeta_credito",
+      "estado_envio": "entregado"
+    },
+    {
+      "id": 102,
+      "clienteId": 1,
+      "fecha_compra": "2026-10-16T09:15:00Z",
+      "total_pagado": 45.0,
+      "metodo_pago": "paypal",
+      "estado_envio": "en_camino"
+    }
+  ]
+}

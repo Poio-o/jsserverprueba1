@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control - CRUD Ventas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Sistema de Gestión Integral</h1>
+    </header>
+
+    <div class="tabs">
+      <button id="btn-tab-clientes" class="tab-btn active">Gestionar Clientes</button>
+      <button id="btn-tab-pedidos" class="tab-btn">Gestionar Pedidos</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2 id="form-title">Añadir Registro</h2>
+        <form id="crud-form">
+          <input type="hidden" id="registro-id">
+          <div id="dynamic-fields">
+          </div>
+          <button type="submit" id="btn-submit">Guardar Registro</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2 id="table-title">Registros Actuales</h2>
+        <div class="table-container">
+          <table id="data-table">
+            <thead>
+              <tr id="table-headers"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.ts"></script>
+</body>
+</html>
